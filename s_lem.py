@@ -69,7 +69,6 @@ def add_text(txt):
         return txt[:-1] + '. The end.'
     if fate():
         if fate():
-            # to scientists
             txt = txt[:-1] + ', but scientists create a new weapon '
             txt += random.choice(list12)
             if 'not work' in txt:
@@ -79,7 +78,6 @@ def add_text(txt):
             txt += random.choice(list13)
             return txt
     else:
-        # to 'but' scenario
         txt += random.choice(list14)
         if 'girl' in text:
             if fate():
@@ -88,9 +86,6 @@ def add_text(txt):
         txt += random.choice(list15)
     return txt
 
-# The Earth is invaded by big Star Swarm insects who do not understand us also they are radioactive and can not be destroyed
-# by crowd of people with hayforks and torches, but scientists create a new weapon that kill them all. The end.
-# so they are establish the dictatorship. The end.
 
 text = 'The Earth '
 text = add_text(text)
